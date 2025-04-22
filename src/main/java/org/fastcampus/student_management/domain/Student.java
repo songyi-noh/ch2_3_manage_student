@@ -32,4 +32,12 @@ public class Student {
   public boolean isActivate() {
     return activated;
   }
+  public Student activate(Student student) {
+    student.activated = true;
+    return student;
+  }
+  public Student deActivate(Student student) {
+    student.activated = false;
+    return student;
+  }
 }

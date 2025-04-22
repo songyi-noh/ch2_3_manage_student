@@ -46,4 +46,8 @@ public class Course {
   public Long getCourseTime() {
     return courseTime;
   }
+
+  public Course changeFee(Course course, int fee) {
+    return new Course(this.student, this.courseName, fee, this.dayOfWeek, this.courseTime);
+  }
 }
